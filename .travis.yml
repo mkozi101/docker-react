@@ -21,6 +21,3 @@ deploy:
     secure: "$AWS_ACCESS_KEY"
   secret_access key:
     secure: "$AWS_SECRET_KEY"
-
-  AKIA6KOJ4YSPLKIEPUW4
-  1tseSLOLrNXdVpA3V6GafkqwOUYHOIBM1N8RaVGQ
