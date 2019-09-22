@@ -7,3 +7,20 @@ before_install:
 
 script:
   - docker run -e CI=true mkozi/docker-react npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "mkozi-docker-react"
+  env: "MkoziDockerReact-env"
+  bucket_name: "elasticbeanstalk-us-east-1-984507794590"
+  bucket_path: "mkozi-docker-react"
+  on:
+    branch: master
+  access_key_id:
+    secure: "$AWS_ACCESS_KEY"
+  secret_access key:
+    secure: "$AWS_SECRET_KEY"
+
+  AKIA6KOJ4YSPLKIEPUW4
+  1tseSLOLrNXdVpA3V6GafkqwOUYHOIBM1N8RaVGQ
